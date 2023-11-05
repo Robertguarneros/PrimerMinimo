@@ -1,11 +1,21 @@
-package edu.upc.dsa.models.resources;
+package edu.upc.dsa.models.auxiliarclasses;
 
 import java.util.List;
+
+/**
+ * Auxiliary class MatchStats to help with storing information about matches
+ */
 public class MatchStats {
     String gameID;
     String userID;
     List<LevelStats> levelDetails;
 
+    /**
+     * Class MatchStats
+     * @param gameID
+     * @param userID
+     * @param levelDetails
+     */
     public MatchStats(String gameID, String userID, List<LevelStats> levelDetails) {
         this.gameID = gameID;
         this.userID = userID;

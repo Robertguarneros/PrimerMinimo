@@ -2,6 +2,10 @@ package edu.upc.dsa.models;
 
 import java.util.List;
 import java.util.ArrayList;
+
+/**
+ * Class Match
+ */
 public class Match {
     String gameID;
     String userID;
@@ -11,6 +15,11 @@ public class Match {
     List<String> levelDate;
     boolean currentMatch;
 
+    /**
+     * Class Match
+     * @param gameID
+     * @param userID
+     */
     public Match(String gameID, String userID){
         this.gameID = gameID;
         this.userID = userID;
@@ -31,8 +40,9 @@ public class Match {
     }
 
     public String getUserID() {
-        return userID;
+        return this.userID != null ? this.userID : "";
     }
+
 
     public void setUserID(String userID) {
         this.userID = userID;
@@ -78,6 +88,11 @@ public class Match {
         this.currentMatch = currentMatch;
     }
 
+    /**
+     * Method to move to the next level
+     * @param date
+     * @param points
+     */
     public void nextLevel(String date, int points){
         this.currentLevel = this.currentLevel + 1;
         this.totalPoints = this.totalPoints + points;
@@ -85,6 +100,11 @@ public class Match {
         levelDate.add(date);
     }
 
+    /**
+     * Method to end the match when the last level is reached
+     * @param date
+     * @param points
+     */
     public void endMatch(String date, int points){
         this.totalPoints = this.totalPoints + points + 100;
         pointsPerLevel.add(points);
@@ -92,5 +112,10 @@ public class Match {
         this.currentMatch = false;
     }
 
-
+    /**
+     * Method to end the match when not in last level
+     */
+    public void endMatchNow(){
+        this.currentMatch = false;
+    }
 }

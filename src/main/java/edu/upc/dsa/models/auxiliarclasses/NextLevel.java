@@ -1,10 +1,19 @@
-package edu.upc.dsa.models.resources;
+package edu.upc.dsa.models.auxiliarclasses;
 
+/**
+ * Class NextLevel to help by storing data and setting the date when changing the level
+ */
 public class NextLevel {
     String userID;
     int points;
     String nextLevelDate;
 
+    /**
+     * Class NextLevel
+     * @param userID
+     * @param points
+     * @param nextLevelDate
+     */
     public NextLevel(String userID, int points, String nextLevelDate) {
         this.userID = userID;
         this.points = points;

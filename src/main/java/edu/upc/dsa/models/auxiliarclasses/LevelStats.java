@@ -1,12 +1,19 @@
-package edu.upc.dsa.models.resources;
+package edu.upc.dsa.models.auxiliarclasses;
 
-import java.util.logging.Level;
-
+/**
+ * Auxiliary class to help with storing data about levels
+ */
 public class LevelStats {
     int levelID;
     int pointsPerLevel;
     String levelDate;
 
+    /**
+     * Class LevelStats to help with storing information
+     * @param levelID
+     * @param pointsPerLevel
+     * @param levelDate
+     */
     public LevelStats(int levelID, int pointsPerLevel, String levelDate) {
         this.levelID = levelID;
         this.pointsPerLevel = pointsPerLevel;
