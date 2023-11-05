@@ -40,9 +40,8 @@ public class Match {
     }
 
     public String getUserID() {
-        return this.userID != null ? this.userID : "";
+        return userID;
     }
-
 
     public void setUserID(String userID) {
         this.userID = userID;

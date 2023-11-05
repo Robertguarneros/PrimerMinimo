@@ -1,4 +1,4 @@
-# Primer Mínimo 
+# PrimerMinimo 
 
 ## Parte 1: 5 puntos
 
@@ -38,7 +38,13 @@ Operaciones del enunciado:
 Ver la implementación en GameManagerImpl.
 
 ### 4.- Implementación de un test (JUNIT) sobre el componente desarrollado. Se debe implementar cuatro operaciones de test anteriormente descritas.
-Ver la implementacion en GameManagerImplTest.
+Ver la implementacion en GameManagerImplTest. 
+
+**Nota:** _Con JUNIT no funcionaba el test de createMatch ya que regresaba errores null._ 
+Después de consultar con chatGPT, me sugirió que utilizará HashMaps para no tener que hacer búsqudas y poder localizar la información más rápido y con menos complejidad. 
+Utilicé Javadocs de HashMap https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/HashMap.html
+
+Después de aprender a usar HashMaps logré implementarlo y funcionó todo de manera correcta. 
 
 ## PARTE II: 5 puntos
 ### 1.- Definir (servicio, operaciones, rutas, métodos HTTP, peticiones, respuestas, códigos de respuesta) e implementar un servicio REST que permita realizar las operaciones especificadas en la primera parte del ejercicio. Se recomienda que todas las operaciones deben retornar “objetos de transferencia” y evitar ciclos/relaciones. Si los objetos de negocio son complejos se complica la serialización/deserialización. El servicio debe utilizar el componente construido en el punto anterior.

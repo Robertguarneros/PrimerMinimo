@@ -71,7 +71,6 @@ class GameManagerImplTest {
         //Test Roberto created a match
         this.gm.createMatch("Spider-Man","Roberto");
         Assert.assertEquals(true, this.gm.getMatch("Roberto").isCurrentMatch());
-
         Assert.assertEquals("Spider-Man",this.gm.getMatch("Roberto").getGameID());
         Assert.assertEquals("Roberto",this.gm.getMatch("Roberto").getUserID());
 

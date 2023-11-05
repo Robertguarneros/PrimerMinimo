@@ -33,14 +33,11 @@ public class User {
     }
 
     public List<Match> getMatchesPlayed() {
-        return this.matchesPlayed;
+        return matchesPlayed;
     }
 
     public void setMatchesPlayed(List<Match> matchesPlayed) {
         this.matchesPlayed = matchesPlayed;
-    }
-    public void addMatch(Match match) {
-        this.matchesPlayed.add(match);
     }
 
     /**
